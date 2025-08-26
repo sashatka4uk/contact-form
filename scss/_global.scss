@@ -1,0 +1,44 @@
+/****************************\
+   Global
+\****************************/
+@use "variables" as v;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla-Regular", sans-serif;
+  background-color: v.$col-Green-200;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  font-family: "Karla-Regular";
+  font-size: 1rem;
+  line-height: 150%;
+  color: v.$col-Grey-900;
+  margin-bottom: 0.5rem;
+  & span {
+    color: v.$col-Green-600;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  border: 1px solid v.$col-Grey-500;
+  border-radius: 0.5rem;
+}

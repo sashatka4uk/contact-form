@@ -1,0 +1,19 @@
+/****************************\
+   Form
+\****************************/
+@use "variables" as v;
+@use "font" as f;
+
+.form {
+  &__btn {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: v.$col-Green-600;
+    font-family: "Karla-Bold";
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: v.$col-White;
+  }
+}

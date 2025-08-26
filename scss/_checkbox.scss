@@ -1,0 +1,22 @@
+/****************************\
+   Checkbox
+\****************************/
+@use "variables" as v;
+@use "font" as f;
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 2.5rem;
+  & input {
+    accent-color: v.$col-Green-600;
+  }
+  & label {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-family: "Karla-Regular";
+    line-height: 150%;
+    color: v.$col-Grey-900;
+  }
+}

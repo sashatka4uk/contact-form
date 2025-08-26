@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <section class="contact-us">
+        <h1 class="contact-us__heading">Contact Us</h1>
+        <form class="contact-as__form form" action="#">
+          <div class="form__name name">
+            <div class="name__first">
+              <label for="first-name">First Name <span>*</span></label>
+              <input type="text" id="first-name" />
+            </div>
+            <div class="name__last">
+              <label for="last-name">Last Name <span>*</span></label>
+              <input type="text" id="last-name" />
+            </div>
+          </div>
+          <div class="form__email email">
+            <label for="email">Email Address <span>*</span></label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form__query query">
+            <label class="query__text">Query Type <span>*</span></label>
+            <div class="query__radios">
+              <div class="query__radio">
+                <input type="radio" name="query" id="general-enquiry" />
+                <label for="general-enquiry">General Enquiry</label>
+              </div>
+              <div class="query__radio">
+                <input type="radio" name="query" id="support-request" />
+                <label for="support-request">Support Request</label>
+              </div>
+            </div>
+          </div>
+          <div class="form__message message">
+            <label for="message">Message <span>*</span></label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="form__checkbox checkbox">
+            <input type="checkbox" name="consent" id="consent" />
+            <label for="consent"
+              >I consent to being contacted by the team <span>*</span></label
+            >
+          </div>
+          <button class="form__btn" type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

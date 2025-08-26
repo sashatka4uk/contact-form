@@ -1,0 +1,20 @@
+/****************************\
+   Contact-us
+\****************************/
+@use "variables" as v;
+@use "font" as f;
+
+.contact-us {
+  min-width: 46rem;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: v.$col-White;
+
+  &__heading {
+    font-family: "Karla-Bold";
+    font-size: 2rem;
+    letter-spacing: -1px;
+    line-height: 100%;
+    margin-bottom: 2rem;
+  }
+}
