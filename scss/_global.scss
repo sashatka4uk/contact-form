@@ -44,6 +44,7 @@ label {
 
 input:focus {
   outline: none;
+  border: 1px solid v.$col-Green-600;
 }
 
 input,

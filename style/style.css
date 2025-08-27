@@ -59,6 +59,7 @@ label span {
 
 input:focus {
   outline: none;
+  border: 1px solid #0c7d69;
 }
 
 input,
