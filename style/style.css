@@ -1,7 +1,4 @@
 /****************************\
-    Colors
-\****************************/
-/****************************\
     Font
 \****************************/
 @font-face {
@@ -144,10 +141,12 @@ textarea {
     row-gap: 1.5rem;
   }
 }
-.name--first, .name--last {
+.name--first,
+.name--last {
   flex: 1;
 }
-.name--first input, .name--last input {
+.name--first input,
+.name--last input {
   width: 100%;
   padding: 0.75rem 1.5rem;
   font-family: "Karla-Regular";
@@ -203,11 +202,11 @@ textarea {
   color: #2b4246;
 }
 
-.query__radio:has(input[type=radio]:checked) {
+.query__radio:has(input[type="radio"]:checked) {
   background-color: #dff1e7;
 }
 
-input[type=radio] {
+input[type="radio"] {
   accent-color: #0c7d69;
 }
 
