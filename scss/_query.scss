@@ -5,13 +5,19 @@
 @use "font" as f;
 
 .query {
-  margin-bottom: 1.5rem;
+  &__text {
+    margin-bottom: 1rem;
+  }
   & input {
     display: block;
   }
   &__radios {
     display: flex;
     column-gap: 1rem;
+    @media (max-width: 37.5rem) {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
   }
   &__radio {
     display: flex;

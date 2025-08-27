@@ -10,6 +10,14 @@
   border-radius: 1rem;
   background-color: v.$col-White;
 
+  @media (max-width: 48rem) {
+    min-width: 43.125rem;
+  }
+
+  @media (max-width: 42.5rem) {
+    padding: 1.5rem;
+    min-width: auto;
+  }
   &__heading {
     font-family: "Karla-Bold";
     font-size: 2rem;

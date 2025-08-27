@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+main {
+  @media (max-width: 37.5rem) {
+    padding: 1rem;
+  }
+}
 body {
   font-family: "Karla-Regular", sans-serif;
   background-color: v.$col-Green-200;
@@ -19,6 +24,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 42.5rem) {
+    width: auto;
+    height: auto;
+  }
 }
 
 label {

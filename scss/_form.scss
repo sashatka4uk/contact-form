@@ -16,4 +16,19 @@
     line-height: 150%;
     color: v.$col-White;
   }
+  &__name {
+    margin-bottom: 1.5rem;
+  }
+  &__email {
+    margin-bottom: 1.5rem;
+  }
+  &__query {
+    margin-bottom: 1.5rem;
+  }
+  &__message {
+    margin-bottom: 2.5rem;
+  }
+  &__checkbox {
+    margin-bottom: 2.5rem;
+  }
 }

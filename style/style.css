@@ -23,6 +23,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 37.5rem) {
+  main {
+    padding: 1rem;
+  }
+}
+
 body {
   font-family: "Karla-Regular", sans-serif;
   background-color: #dff1e7;
@@ -31,6 +37,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 42.5rem) {
+  body {
+    width: auto;
+    height: auto;
+  }
 }
 
 label {
@@ -64,6 +76,17 @@ textarea {
   border-radius: 1rem;
   background-color: #ffffff;
 }
+@media (max-width: 48rem) {
+  .contact-us {
+    min-width: 43.125rem;
+  }
+}
+@media (max-width: 42.5rem) {
+  .contact-us {
+    padding: 1.5rem;
+    min-width: auto;
+  }
+}
 .contact-us__heading {
   font-family: "Karla-Bold";
   font-size: 2rem;
@@ -86,6 +109,21 @@ textarea {
   line-height: 150%;
   color: #ffffff;
 }
+.form__name {
+  margin-bottom: 1.5rem;
+}
+.form__email {
+  margin-bottom: 1.5rem;
+}
+.form__query {
+  margin-bottom: 1.5rem;
+}
+.form__message {
+  margin-bottom: 2.5rem;
+}
+.form__checkbox {
+  margin-bottom: 2.5rem;
+}
 
 /****************************\
    Name
@@ -93,12 +131,22 @@ textarea {
 .name {
   display: flex;
   column-gap: 1rem;
-  margin-bottom: 1.5rem;
 }
-.name__first, .name__last {
+@media (max-width: 48rem) {
+  .name {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 37.5rem) {
+  .name {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+}
+.name--first, .name--last {
   flex: 1;
 }
-.name__first input, .name__last input {
+.name--first input, .name--last input {
   width: 100%;
   padding: 0.75rem 1.5rem;
   font-family: "Karla-Regular";
@@ -110,9 +158,6 @@ textarea {
 /****************************\
    Email
 \****************************/
-.email {
-  margin-bottom: 1.5rem;
-}
 .email input {
   width: 100%;
   padding: 0.75rem 1.5rem;
@@ -125,8 +170,8 @@ textarea {
 /****************************\
    Query
 \****************************/
-.query {
-  margin-bottom: 1.5rem;
+.query__text {
+  margin-bottom: 1rem;
 }
 .query input {
   display: block;
@@ -134,6 +179,12 @@ textarea {
 .query__radios {
   display: flex;
   column-gap: 1rem;
+}
+@media (max-width: 37.5rem) {
+  .query__radios {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 }
 .query__radio {
   display: flex;
@@ -162,9 +213,6 @@ input[type=radio] {
 /****************************\
    Message
 \****************************/
-.message {
-  margin-bottom: 2.5rem;
-}
 .message textarea {
   padding: 0.75rem 1.5rem;
   width: 100%;
@@ -184,7 +232,6 @@ input[type=radio] {
   display: flex;
   align-items: center;
   column-gap: 16px;
-  margin-bottom: 2.5rem;
 }
 .checkbox input {
   accent-color: #0c7d69;
